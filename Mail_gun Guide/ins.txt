@@ -1,0 +1,42 @@
+hello my friends 
+it's me again ibraheem,
+
+in this video im going to show you how to use mailgun api
+
+in last few days i have suffered to use google smtp in some host that blocking external smtp,so i looked for many solution and MailGun API saved me much time easy to setup and easy to develop
+
+before we start there are some requirement you must have:
+1- PHP 5.4 or higher
+2- composer
+3- an activated account at mailgun ( i assumed that you ahve already one)
+
+now i'm going to install composer using console so if you already have it just copy it to work folder
+
+to install run this command in work folder:
+php -r "readfile('https://getcomposer.org/installer');" | php
+
+ok now we have it so now we are ready to use it, let's download MailGun api and it's depenedencies 
+
+go to mailgun.com website 
+
+go to Docs and select php
+
+go to Github link
+
+here are the instructions to download api let's start
+
+while downloading if you check the Github readme you will find that mailGun API needs another api called  php-http/client-implementation (Guzzle6) so we are going to download it too
+(important)
+ok now we have everything we need lets build our php page 
+
+here if you follow the docuemnt you will get some errors 
+especially if you work on localhost development (ssl related errors)
+
+so we are going to turn off SSL verfication on localhost but it's not recommend at production 
+
+now to disable ssl verfication you need to pass config to Guzzle Client then pass client object to Guzzle Adapter after that pass the Adapter to Mailgun object as this code .
+
+
+thats it
+
+thanks for watching :)
